@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manana Ashraya | Luxury Living</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Manana Ashraya</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-sub">Attibele, Bangalore</p>
+            <h1>Live Beyond <br>Ordinary</h1>
+            <p class="hero-desc">Luxury residences starting at ₹4,990/sqft on the Hosur Road corridor</p>
+            <a href="#contact" class="btn-primary">Enquire Now</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About the Project</h2>
+            <p>Manana Ashraya is a premium residential development located in the rapidly growing Attibele–Chandapura corridor. Strategically positioned near the Metro Yellow Line extension, STRR, and the upcoming Hosur Airport, this is where infrastructure meets luxury.</p>
+        </div>
+    </section>
+
+    <!-- AMENITIES -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <h2>Amenities</h2>
+            <div class="amenity-grid">
+                <div class="amenity-card">🏊 Swimming Pool</div>
+                <div class="amenity-card">🏋️ Gymnasium</div>
+                <div class="amenity-card">🌿 Landscaped Gardens</div>
+                <div class="amenity-card">🔒 24/7 Security</div>
+                <div class="amenity-card">🚗 Covered Parking</div>
+                <div class="amenity-card">👶 Children's Play Area</div>
+                <div class="amenity-card">🎯 Clubhouse</div>
+                <div class="amenity-card">⚡ Power Backup</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="price-grid">
+                <div class="price-card">
+                    <h3>2 BHK</h3>
+                    <p class="price">₹45 – 55 Lakhs</p>
+                    <p>950 – 1100 sqft</p>
+                </div>
+                <div class="price-card highlight">
+                    <h3>3 BHK</h3>
+                    <p class="price">₹65 – 80 Lakhs</p>
+                    <p>1350 – 1600 sqft</p>
+                </div>
+                <div class="price-card">
+                    <h3>4 BHK</h3>
+                    <p class="price">₹95 Lakhs+</p>
+                    <p>2000+ sqft</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Enquire Now</h2>
+            <div class="form-wrapper">
+                <div id="form-container">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <select id="budget">
+                        <option value="">Select Budget</option>
+                        <option value="40-60L">₹40 – 60 Lakhs</option>
+                        <option value="60-80L">₹60 – 80 Lakhs</option>
+                        <option value="80L+">₹80 Lakhs+</option>
+                    </select>
+                    <select id="bhk">
+                        <option value="">Select BHK</option>
+                        <option value="2BHK">2 BHK</option>
+                        <option value="3BHK">3 BHK</option>
+                        <option value="4BHK">4 BHK</option>
+                    </select>
+                    <textarea id="message" placeholder="Any specific requirements?"></textarea>
+                    <button onclick="submitLead()" class="btn-primary">Submit Enquiry</button>
+                    <p id="form-msg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHATBOT -->
+    <div class="chatbot-toggle" onclick="toggleChat()">💬</div>
+    <div class="chatbot-box" id="chatbot">
+        <div class="chat-header">
+            <span>Manana Assistant</span>
+            <span onclick="toggleChat()" style="cursor:pointer">✕</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-msg">Hi! I'm your Manana Ashraya assistant. Ask me anything about the project.</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="handleKey(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Manana Ashraya by Aahyaa Property. All rights reserved.</p>
+        <p>Attibele, Bangalore – 562107 | <a href="tel:+919999999999">+91 99999 99999</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
